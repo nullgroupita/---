@@ -24,7 +24,7 @@ cd /workspace/BackEnd
 
 export BUILD_ID=dontKillMe
 
-java -jar dev.jar >run.txt 2>&1'''
+nohup java -jar dev.jar >run.txt 2>&1 &'''
       }
     }
   }
