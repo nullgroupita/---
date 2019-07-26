@@ -19,7 +19,7 @@ pipeline {
 p=`jps | grep jar | grep -P \'\\d+\' -o`
 kill -9 $p
 
-cp /root/.jenkins/workspace/BuildBackEnd/build/libs/ParkingLotNullITA-0.0.1-SNAPSHOT.jar /workspace/BackEnd/dev.jar
+cp /root/.jenkins/workspace/ParkingLotNullITA_backend_1/build/libs/ParkingLotNullITA-0.0.1-SNAPSHOT.jar /workspace/BackEnd/dev.jar
 cd /workspace/BackEnd
 export BUILD_ID=dontKillMe
 nohup java -jar dev.jar >run.txt 2>&1 &'''
