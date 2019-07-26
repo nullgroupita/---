@@ -8,7 +8,8 @@ pipeline {
     }
     stage('Gradle Build') {
       steps {
-        sh 'gradlew clean build'
+        sh '''chmod 700 ./gradlew
+./gradlew clean build'''
       }
     }
     stage('Deploy To Staging') {
