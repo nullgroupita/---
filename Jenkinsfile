@@ -22,7 +22,7 @@ cp /root/.jenkins/workspace/rkingLotNullITA_backend_1_master/build/libs/ParkingL
 
 cd /workspace/BackEnd
 
-export BUILD_ID=dontKillMe
+JENKINS_NODE_COOKIE=dontKillMe
 
 nohup java -jar dev.jar >run.txt 2>&1 &'''
       }
