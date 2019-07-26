@@ -18,10 +18,12 @@ pipeline {
 
 p=`jps | grep jar | grep -P \'\\d+\' -o`
 kill -9 $p
-
 cp /root/.jenkins/workspace/rkingLotNullITA_backend_1_master/build/libs/ParkingLotNullITA-0.0.1-SNAPSHOT.jar /workspace/BackEnd/dev.jar
+
 cd /workspace/BackEnd
+
 export BUILD_ID=dontKillMe
+
 nohup java -jar dev.jar >run.txt 2>&1 &'''
       }
     }
